@@ -1,5 +1,5 @@
 const sidebar = require('./siderbar.js');
-module.exports = {
+export default {
   // "base": '/tao-Lionel.github.io/',
   "base": "/",
   "title": "麻瓜博客",
