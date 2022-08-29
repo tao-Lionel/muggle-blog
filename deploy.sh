@@ -3,22 +3,22 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+
+push_addr=`git@github.com:tao-Lionel/tao-Lionel.github.io.git` # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
+commit_info=`git describe --all --always --long`
+dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
+push_branch=master # 推送的分支
+
 # 生成静态文件
 npm run build
 
 # 进入生成的文件夹
-cd dist
+cd $dist_path
 
 git init
-git add .
-git commit -m 'deploy'
+git add -A
+git commit -m "deploy, $commit_info"
+git push -f $push_addr HEAD:$push_branch
 
-# 如果发布到 https://<USERNAME>.github.io  填写你刚刚创建的仓库地址
-git push -f git@github.com:tao-Lionel/tao-Lionel.github.io.git master
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
-
-cd ..
-
-# tcb hosting:deploy public -e blog-9g8lgnuke4603ff9
+cd -
+rm -rf $dist_path
