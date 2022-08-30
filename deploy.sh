@@ -17,8 +17,10 @@ cd $dist_path
 
 git init
 git add -A
-git commit -m "deploy, $commit_info"
-git push -f $push_addr HEAD:$push_branch
+# git commit -m "deploy, $commit_info"
+git commit -m "deploy"
+# git push -f $push_addr HEAD:$push_branch
+git push -f git@github.com:tao-Lionel/tao-Lionel.github.io.git master
 
 cd -
 rm -rf $dist_path
