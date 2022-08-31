@@ -1,11 +1,12 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Evan's blog
-tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
+heroText: Muggle blog
+tagline: 学习 记录。
 # actionText: 立刻进入 →
 # actionLink: /web/
-# bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+bannerBg: auto 
+# auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: # 可选的
   - title: 前端
@@ -13,7 +14,7 @@ features: # 可选的
     link: /web/ # 可选
     imgUrl: /img/web.png # 可选
   - title: 页面
-    details: html(5)/css(3)，前端页面相关技术
+    details: html/css等，前端页面相关技术
     link: /ui/
     imgUrl: /img/ui.png
   - title: 技术
@@ -45,7 +46,6 @@ features: # 可选的
 
 </br>
 
-
 ## 特色功能
 博客部分特色功能介绍
 
@@ -75,7 +75,6 @@ features: # 可选的
 </style>
 ```
 :::
-
 
 ## :email: 联系
 
