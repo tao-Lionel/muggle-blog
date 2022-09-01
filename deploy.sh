@@ -19,7 +19,7 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master:gh-pages # 推送到github
+git push -f $githubUrl master:master # 推送到github
 
 # push_addr=git@github.com:tao-Lionel/tao-Lionel.github.io.git # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
 # commit_info=`git describe --all --always --long`
