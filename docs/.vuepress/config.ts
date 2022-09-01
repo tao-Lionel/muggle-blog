@@ -12,6 +12,7 @@ const GIT_HUB = "https://github.com/tao-Lionel"; // github 地址
 const NAME = `Lionel tao`; // 博主姓名
 const EMAIL = "lionel_tao@163.com";
 const BLOG_NAME = "muggle-blog";
+const AVATAR = "";
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: "vdoing", // 使用npm主题包
