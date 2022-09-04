@@ -1,14 +1,15 @@
-<!-- ---
-title: 我做了一个手写春联小网页，祝大家虎年暴富
-date: 2022-01-28 14:59:51
-permalink: /pages/829589/
-titleTag: 原创
+---
+title: 随便写
+date: 2022-09-01 20:51:57
+permalink: /pages/0ab418/
 sidebar: auto
-categories: 
+categories:
   - 随笔
-tags: 
-  - null
+tags:
+  - 
 author: 
   name: Lionel tao
   link: https://github.com/tao-Lionel
---- -->
+---
+
+现在是周日晚上，心情有点低落，感觉找不到人生的意义，迷茫，还想找个女朋友啊啊啊！！！
