@@ -147,7 +147,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg",
+      // avatar: "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg",
+      avatar: "./public/img/avatar.png",
       name: `${NAME}`,
       slogan: "一枚前端",
     },
@@ -189,7 +190,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },
 
     // 自定义html(广告)模块
-    htmlModules,
+    // htmlModules,
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
