@@ -2,7 +2,7 @@
 home: true
 # heroImage: /img/web.png
 heroText: Muggle blog
-tagline: 学习 记录。
+tagline: 学习 记录 整理。
 # actionText: 立刻进入 →
 # actionLink: /web/
 bannerBg: auto 
