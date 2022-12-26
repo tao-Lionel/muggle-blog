@@ -118,7 +118,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      // avatar: "https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg",
       avatar: "/img/avatar.jpg",
       name: `${NAME}`,
       slogan: `${SLOGAN}`,
@@ -126,7 +125,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
-      iconfontCssFile: "//at.alicdn.com/t/c/font_3621964_68gb2gnj04n.css", // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
+      iconfontCssFile: "//at.alicdn.com/t/c/font_3621964_a4ahdzvzz6t.css", // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
         // {
         //   iconClass: "icon-youxiang",
