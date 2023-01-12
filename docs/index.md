@@ -1,4 +1,5 @@
 ---
+layout: Layout
 home: true
 # heroImage: /img/web.png
 heroText: Muggle blog
@@ -30,6 +31,3 @@ bannerBg: /img/bg.png
 
 
 
-<ClientOnly>
-  <WebInfo/>
-</ClientOnly>
