@@ -2,6 +2,7 @@ import { defineClientConfig } from "@vuepress/client";
 import Layout from "./layouts/Layout.vue";
 import NotFound from "./layouts/NotFound.vue";
 import { useRoute, useRouter } from 'vue-router'
+import "./styles/index.css";
 
 export default defineClientConfig({
   enhance({ app }) {

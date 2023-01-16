@@ -1,13 +1,20 @@
 import { chalk, path } from "@vuepress/utils";
+import { themeDataPlugin } from "@vuepress/plugin-theme-data";
 
 // const __dirname = fs.getDirname(import.meta.url);
 
 export const tadpoleTheme = options => {
   console.log(options);
+  console.log(__dirname);
 
   // 返回主题对象
   return {
     name: "vurpress-theme-tadpole",
+
+    // 定义路径别名
+    alias: {
+      "@": path.resolve(__dirname, "./"),
+    },
 
     // 主题的客户端配置文件的路径
     clientConfigFile: path.resolve(__dirname, "client.js"),
@@ -18,6 +25,11 @@ export const tadpoleTheme = options => {
     templateDev: path.resolve(__dirname, "templates/dev.html"),
 
     // 使用插件
-    plugins: [],
+    plugins: [
+      themeDataPlugin({
+        // 配置项
+        themeData: options,
+      }),
+    ],
   };
 };

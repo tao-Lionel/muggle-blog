@@ -1,20 +1,13 @@
+<script lang="ts" setup>
+import { defineComponent, reactive, toRefs, ref } from "vue";
+import Navbar from "@/components/Navbar.vue";
+</script>
+
 <template>
-  <div class="bg-black">
+  <div class="theme-container">
     <Navbar></Navbar>
     <Content></Content>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, reactive, toRefs, ref } from "vue";
-import Navbar from "../components/Navbar.vue";
-
-export default defineComponent({
-  name: "Layout",
-  components: { Navbar },
-  async setup() {
-    return {};
-  },
-});
-</script>
 <style lang="scss" scoped></style>
