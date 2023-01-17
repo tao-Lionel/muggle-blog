@@ -11,6 +11,28 @@ const AVATAR = "/img/avatar.jpg";
 const SLOGAN = "菜鸟前端";
 
 export default {
+  // base: '/', // 默认'/'
+  locales: {
+    "/": {
+      lang: "zh-CN",
+      title: "Muggle blog",
+      description: "web前端技术博客,专注前端学习与总结。包括但不限于分享JavaScript,js,ES6,TypeScript,vue,ts,css3,css,html5,html,Node,git等技术文章。",
+    },
+  },
+  head: [
+    ["meta", { name: "referrer", content: "no-referrer-when-downgrade" }], // 站点统计用
+    ["link", { rel: "stylesheet", href: "https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css" }], // 站点统计用
+    ["link", { rel: "icon", href: "/img/favicon.ico" }], //favicons，资源放在public文件夹
+    [
+      "meta",
+      {
+        name: "keywords",
+        content: "前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,ts,vue,css3,html5,node.js,Node,git,github,markdown",
+      },
+    ],
+    // ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
+  ],
+
   // 主题配置 使用本地主题
   theme: tadpoleTheme({
     navbar: [

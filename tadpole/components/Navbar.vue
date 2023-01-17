@@ -1,19 +1,27 @@
 <script lang="ts" setup>
-import { defineComponent, reactive, toRefs, ref } from "vue";
-import { useThemeLocaleData, useThemeData } from "@/composables";
-const themeData = useThemeData();
-console.log(themeData.value);
-console.log(useThemeLocaleData().value);
+import { defineComponent, reactive, toRefs, ref } from "vue"
+import { useSiteLocaleData, usePageHeadTitle, usePageHead, useRouteLocale } from "@vuepress/client"
+import { useThemeData } from "@/composables"
+import NavLinks from "./NavLinks.vue"
+
+const themeData = useThemeData().value
+console.log(themeData)
+
+const title = usePageHeadTitle().value
 </script>
 
 <template>
-  <heder>
-    {{ themeData }}
-    <!-- <router-link to="/" class="home-link">
-      <img class="logo" v-if="$site.themeConfig.logo" :src="$withBase($site.themeConfig.logo)" :alt="$siteTitle" />
-      <span ref="siteName" class="site-name" v-if="$siteTitle" :class="{ 'can-hide': $site.themeConfig.logo }">{{ $siteTitle }}</span>
-    </router-link> -->
+  <heder class="flex flex-row justify-between items-center fixed inset-0 h-14 py-3 px-6 text-comText dark:bg-dBg">
+    <div v-if="false"></div>
+
+    <router-link to="/" class="flex flex-row items-center">
+      <img class="w-8 h-8 mr-3" v-if="themeData.log" :src="themeData.log" :alt="title" />
+      <span class="text-xl dark:text-dText" v-if="title">{{ title }}</span>
+    </router-link>
+
+    <NavLinks></NavLinks>
   </heder>
 </template>
 
 <style scoped></style>
+rgba(30,30,34,0.8)
