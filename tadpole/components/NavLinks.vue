@@ -9,8 +9,15 @@ const userLinks = [
     text: "首页3",
     items: [
       {
-        link: "/bbc",
-        text: "首页333"
+        link: "",
+        text: "首页333",
+        type: "links",
+        items: [
+          {
+            link: "/",
+            text: "首页444"
+          }
+        ]
       },
       {
         link: "/bbc",

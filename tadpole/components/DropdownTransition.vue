@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const onEnter = (el) => {
+  console.log(el)
+}
+</script>
 
 <template>
-  <Transition>
+  <Transition @enter="onEnter">
     <slot></slot>
   </Transition>
 </template>
