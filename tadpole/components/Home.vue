@@ -1,18 +1,18 @@
 <script setup lang="ts">
+import { computed } from "vue"
 import { usePageFrontmatter } from "@vuepress/client"
 
 const homeData = usePageFrontmatter().value
-console.log(homeData)
 
-const bannerBgStyle = () => {
-  return `background: url(${homeData.bannerBg}) center center / cover no-repeat`
-}
+const bannerBgStyle = computed(() => {
+  return { background: `url(${homeData.bannerBg}) center center / cover no-repeat` }
+})
 </script>
 
 <template>
   <div class="home-wrapper">
-    <div class="banner" :style="bannerBgStyle">
-      <header>
+    <div class="banner relative mt-16" :style="bannerBgStyle">
+      <header class="hero relative z-10 text-white mx-auto">
         <h1>{{ homeData.heroText }}</h1>
         <p>{{ homeData.tagline }}</p>
       </header>
@@ -22,4 +22,8 @@ const bannerBgStyle = () => {
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.banner {
+  min-height: 450px;
+}
+</style>
