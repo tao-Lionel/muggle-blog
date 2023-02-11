@@ -3,7 +3,6 @@ import { ref } from "vue"
 import DropdownTransition from "./DropdownTransition.vue"
 
 const props = defineProps(["item"])
-console.log(props)
 
 let open = ref(true)
 
