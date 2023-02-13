@@ -1,14 +1,8 @@
 <script setup lang="ts">
 import { computed } from "vue"
-import { usePageFrontmatter, useSiteData, usePageData } from "@vuepress/client"
-import { pages } from "@temp/pages"
+import { usePageFrontmatter } from "@vuepress/client"
 
 const homeData = usePageFrontmatter().value
-console.log(homeData)
-
-console.log(useSiteData().value)
-console.log(usePageData().value)
-console.log(pages)
 
 const bannerBgStyle = computed(() => {
   return { background: `url(${homeData.bannerBg}) center center / cover no-repeat` }

@@ -1,6 +1,5 @@
 import { chalk, path } from "@vuepress/utils"
 import { themeDataPlugin } from "@vuepress/plugin-theme-data"
-// import { App } from "@vuepress/core"
 // const __dirname = fs.getDirname(import.meta.url);
 
 export const tadpoleTheme = (options) => {
