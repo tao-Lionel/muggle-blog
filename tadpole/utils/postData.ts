@@ -1,4 +1,4 @@
-import { compareDate } from "./util"
+import { compareDate, getType } from "./util"
 
 /**
  * @description: 过滤非文章页
@@ -40,4 +40,66 @@ export function sortPosts(posts) {
  * @description: 按分类和标签分组的文章数据
  * @param {*} posts 按置顶和时间排序过得文章数据
  */
-export function groupPosts(posts) {}
+export function groupPosts(posts) {
+  const categoriesObj = {}
+  const tagsObj = {}
+
+  for (let i = 0; i < posts.length; i++) {
+    const {
+      frontmatter: { categories, tags }
+    } = posts[i]
+    if (getType(categories) === "array") {
+      categories.forEach((item) => {
+        if (item) {
+          // 分类值是有效的
+          if (!categoriesObj[item]) {
+            categoriesObj[item] = []
+          }
+          categoriesObj[item].push(posts[i])
+        }
+      })
+    }
+    if (getType(tags) === "array") {
+      tags.forEach((item) => {
+        if (item) {
+          // 标签值是有效的
+          if (!tagsObj[item]) {
+            tagsObj[item] = []
+          }
+          tagsObj[item].push(posts[i])
+        }
+      })
+    }
+  }
+  return {
+    categories: categoriesObj,
+    tags: tagsObj
+  }
+}
+
+/**
+ * @description: 获取所有分类和标签
+ * @param {*} groupPosts 按分类和标签分组之后的文章数据
+ */
+export function categoriesAndTags(groupPosts) {
+  const categoriesArr = []
+  const tagsArr = []
+
+  for (let key in groupPosts.categories) {
+    categoriesArr.push({
+      key,
+      length: groupPosts.categories[key].length
+    })
+  }
+
+  for (let key in groupPosts.tags) {
+    tagsArr.push({
+      key,
+      length: groupPosts.tags[key].length
+    })
+  }
+  return {
+    categories: categoriesArr,
+    tags: tagsArr
+  }
+}

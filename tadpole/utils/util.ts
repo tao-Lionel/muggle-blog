@@ -1,3 +1,5 @@
+import dayjs from "dayjs"
+
 /**
  * @description: 获取时间戳
  * @param {*} date 时间
@@ -15,4 +17,24 @@ export function getTimeStamp(post): number {
  */
 export function compareDate(a, b) {
   return getTimeStamp(a) - getTimeStamp(b)
+}
+
+/**
+ * @description: 类型判断
+ * @param {*} o
+ */
+export function getType(o) {
+  const s = Object.prototype.toString.call(o)
+  return s.match(/\[object (.*?)\]/)[1].toLowerCase()
+}
+
+/**
+ * @description: 日期格式化(只获取年月日)
+ * @param {*} date
+ */
+export function dateFormat(date) {
+  if (!(date instanceof Date)) {
+    date = new Date(date)
+  }
+  return `${dayjs().year()}-${dayjs().month() + 1}-${dayjs().date()}`
 }
