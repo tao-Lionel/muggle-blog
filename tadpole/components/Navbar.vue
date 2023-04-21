@@ -11,12 +11,12 @@ const title = usePageHeadTitle().value
 </script>
 
 <template>
-  <heder class="flex flex-row justify-between items-center fixed inset-0 h-14 py-3 px-6 text-comText dark:bg-dBg">
+  <heder class="flex flex-row justify-between items-center fixed inset-0 h-3.6 p-0.7-1.5 c-black">
     <div v-if="false"></div>
 
     <router-link to="/" class="flex flex-row items-center">
-      <img class="w-8 h-8 mr-3" v-if="themeData.log" :src="themeData.log" :alt="title" />
-      <span class="text-xl dark:text-dText" v-if="title">{{ title }}</span>
+      <img class="min-w-2.2 h-2.2 mr-0.8" v-if="themeData.log" :src="themeData.log" :alt="title" />
+      <span class="fs-1.3 fw-600" v-if="title">{{ title }}</span>
     </router-link>
 
     <NavLinks></NavLinks>

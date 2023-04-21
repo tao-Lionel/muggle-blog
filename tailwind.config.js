@@ -5,9 +5,6 @@ module.exports = {
   content: ["./tadpole/**/*.{html,js,vue}", "./tadpole/*.{html,js,vue}"],
   important: true,
   theme: {
-    maxWidth: {
-      1100: "1100px"
-    },
     colors: {},
     extend: {},
     backgroundColor: (theme) => ({

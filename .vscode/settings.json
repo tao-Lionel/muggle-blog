@@ -25,5 +25,6 @@
     "vurpress",
     "youjian",
     "youxiang"
-  ]
+  ],
+  "vue.features.codeActions.enable": false
 }
