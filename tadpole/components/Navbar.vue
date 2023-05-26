@@ -16,7 +16,7 @@ const title = usePageHeadTitle().value
 
     <router-link to="/" class="flex flex-row items-center">
       <img class="min-w-2.2 h-2.2 mr-0.8" v-if="themeData.log" :src="themeData.log" :alt="title" />
-      <span class="fs-1.3 fw-600" v-if="title">{{ title }}</span>
+      <span class="fs-1.3 fw-600 c-black" v-if="title">{{ title }}</span>
     </router-link>
 
     <NavLinks></NavLinks>

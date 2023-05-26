@@ -29,8 +29,8 @@ export default defineConfig({
     [/^w-(\d+)p$/, ([, d]) => ({ width: `${d}%` })],
     [/^max-w-(\d+)$/, ([, d]) => ({ "max-width": `${d}px` })],
     [/^min-w-(\d+)$/, ([, d]) => ({ "min-width": `${d}px` })],
-    [/^max-w-(\d+).(\d+)$/, ([, d1, d2]) => ({ "max-width": `${d1}.${d2}rem` })],
-    [/^min-w-(\d+).(\d+)$/, ([, d1, d2]) => ({ "min-width": `${d1}.${d2}rem` })],
+    // [/^max-w-(\d+).(\d+)$/, ([, d1, d2]) => ({ "max-width": `${d1}.${d2}rem` })],
+    // [/^min-w-(\d+).(\d+)$/, ([, d1, d2]) => ({ "min-width": `${d1}.${d2}rem` })],
     [/^m-(\d+)$/, ([, d]) => ({ margin: `${d}rem` })],
     [/^m-(\d+)-(\d+)$/, ([, d1, d2]) => ({ margin: `${d1}rem ${d2}rem` })],
     [/^ml-(\d+)$/, ([, d]) => ({ "margin-left": `${d}rem` })],
@@ -57,6 +57,7 @@ export default defineConfig({
     [/^pt-(\d+).(\d+)$/, ([, d1, d2]) => ({ "padding-top": `${d1}.${d2}rem` })],
     [/^pb-(\d+).(\d+)$/, ([, d1, d2]) => ({ "padding-bottom": `${d1}.${d2}rem` })],
     [/^p-(\d+).(\d+)-(\d+).(\d+)$/, ([, d1, d2, d3, d4]) => ({ padding: `${d1}.${d2}rem ${d3}.${d4}rem` })],
+    [/^p-(\d+)-(\d+).(\d+)$/, ([, d1, d2, d3]) => ({ padding: `${d1}rem ${d2}.${d3}rem` })],
 
     [/^fs-(\d+)$/, ([, d]) => ({ "font-size": `${d}rem` })],
     [/^fs-(\d+).(\d+)$/, ([, d1, d2]) => ({ "font-size": `${d1}.${d2}rem` })],

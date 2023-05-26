@@ -13,11 +13,11 @@ const toggle = () => {
 
 <template>
   <div class="ml-5 nav-items">
-    <button class="flex flex-row relative items-center fs-0.9" type="button" @click="toggle">
-      <router-link v-if="item.link" :to="item.link" class="hover:nav-link">{{ item.text }}</router-link>
+    <div class="flex flex-row relative items-center fs-0.9" type="button" @click="toggle">
+      <router-link v-if="item.link" :to="item.link" class="c-black">{{ item.text }}</router-link>
       <!-- <span class="" v-show="!item.link">{{ item.text }}</span> -->
       <span class="ml-2" :class="open ? 'down-arrow' : 'right-arrow'"></span>
-    </button>
+    </div>
 
     <DropdownTransition>
       <ul class="absolute inset hidden nav-dropdown px-2 py-2" v-show="open">

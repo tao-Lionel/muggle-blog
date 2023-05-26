@@ -9,32 +9,32 @@ console.log(postsList)
 </script>
 
 <template>
-  <div v-for="item in postsList" :key="item.key" class="rounded-md shadow-sm py-4 px-6 bg-white mb-3">
-    <div class="text-2xl my-2 font-medium text-comText">
-      <router-link :to="item.path">
+  <div v-for="item in postsList" :key="item.key" class="rounded-md shadow-sm p-1-1.5 bg-white mb-0.8">
+    <h2 class="mt-0.5 mb-0.5 fs-1.4">
+      <router-link :to="item.path" class="c-black">
         {{ item.title }}
       </router-link>
-    </div>
-    <div class="text-comText opacity-70">
+    </h2>
+    <div class="text-comText opacity-70 fs-0.8">
       <a
         title="作者"
-        class="iconfont icon-touxiang mr-4 text-sm"
+        class="iconfont icon-touxiang mr-1"
         target="_blank"
         v-if="item.frontmatter.author && item.frontmatter.author.link"
         :href="item.frontmatter.author.link"
       >
-        <span class="ml-1">{{ item.frontmatter.author.name }}</span>
+        <span class="ml-0.3 fs-0.8 c-black">{{ item.frontmatter.author.name }}</span>
       </a>
-      <span title="创建时间" class="iconfont icon-riqi mr-4 text-sm" v-if="item.frontmatter.date">
-        <span class="ml-1"> {{ item.date }}</span>
+      <span title="创建时间" class="iconfont icon-riqi mr-1" v-if="item.frontmatter.date">
+        <span class="ml-0.3 fs-0.8 c-black"> {{ item.date }}</span>
       </span>
-      <span title="分类" class="iconfont icon-wenjian mr-4 text-sm" v-if="item.frontmatter.categories">
+      <span title="分类" class="iconfont icon-wenjian mr-1" v-if="item.frontmatter.categories">
         <router-link
           v-for="(c, index) in item.frontmatter.categories"
           :key="index"
           :to="`/categories/?category=${encodeURIComponent(c)}`"
         >
-          <span class="ml-1"> {{ c }}</span>
+          <span class="ml-0.3 fs-0.8 c-black"> {{ c }}</span>
         </router-link>
       </span>
     </div>
