@@ -36,9 +36,6 @@ title: 关于
 - Email: <a href="mailto:lionel_tao@163.com">lionel_tao@163.com</a>
 - GitHub: <https://github.com/tao-Lionel>
 
-## 🎨Theme
-
-本站主题使用了 [`Vdoing`](https://github.com/xugaoyi/vuepress-theme-vdoing)主题，这是一款简洁高效的 VuePress 知识管理&博客主题，想了解更多请点击[`详情`](https://github.com/xugaoyi/vuepress-theme-vdoing)
 <!-- <script>
   export default {
     data(){
