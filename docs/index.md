@@ -9,7 +9,7 @@ hero:
   text: 活到老 学到老.
   tagline: 杂七杂八、乱七八糟的文章
   image:
-    src: /
+    src: ./.vitepress\theme\style\1x1.png
     alt: VitePress
   actions:
     - theme: brand
@@ -41,11 +41,5 @@ features:
 </script>
 
 <style lang="scss">
-:root{
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
-  /*--vp-button-brand-border:-webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
-  --vp-button-brand-bg:-webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
---vp-button-brand-text:-webkit-linear-gradient(120deg, #bd34fe, #41d1ff);*/
-}
+
 </style>
