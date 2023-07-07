@@ -13,7 +13,7 @@ export default defineConfig({
     title: "Muggle",
     lang: "zh-CN",
     description: "web前端技术博客,专注前端学习与总结。包括但不限于分享JavaScript,js,ES6,TypeScript,vue,ts,css3,css,html5,html,Node,git等技术文章。",
-
+    lastUpdated: true,
     themeConfig: {
         nav: [
             {
@@ -38,6 +38,10 @@ export default defineConfig({
         //       }
         //     ]
         //   }
+
+        search:{
+            provider:'local'
+        },
 
         footer: {
             message: '',

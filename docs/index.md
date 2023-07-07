@@ -2,20 +2,43 @@
 home: true
 layout: home
 title: Home
-heroAlt: Logo image
-heroText: Hero Title
-tagline: Hero subtitle
-actionText: Get Started
-actionLink: /guide/guide
+aside: false
+lastUpdated: true
+hero:
+  name: Muggle
+  text: 活到老 学到老.
+  tagline: 杂七杂八、乱七八糟的文章
+  image:
+    src: /img/bg.png
+    alt: VitePress
+  actions:
+    - theme: brand
+      text: 探索
+      link: /blog/index
+    - theme: alt
+      text: GitHub
+      link: https://github.com/tao-Lionel
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VitePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: MIT Licensed | Copyright © 2019-present Evan You
+  - icon: 🎉
+    title: 博客文章
+    details: 杂七杂八
+    link:  /blog/index
+  - icon: 🍧
+    title: 笔记
+    details: 各种读书笔记和文章笔记
+    link:  /note/index
+  - icon: 🎰
+    title: demo
+    details: 一些小demo
+    link:  /collect/index
 ---
 
-
-你好
+<style lang="scss">
+:root{
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  /*--vp-button-brand-border:-webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  --vp-button-brand-bg:-webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+--vp-button-brand-text:-webkit-linear-gradient(120deg, #bd34fe, #41d1ff);*/
+}
+</style>
