@@ -4,8 +4,10 @@
 set -e
 
 # npm run build 
+# cd docs/.vuepress/dist
 npm run docs:build
-cd docs/.vuepress/dist
+cd docs/.vitepress/dist
+
 
 # 部署
 if [ -z "$GITHUB_TOKEN"]; then
