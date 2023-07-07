@@ -3,7 +3,8 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-npm run build 
+# npm run build 
+npm run docs:build
 cd docs/.vuepress/dist
 
 # 部署
