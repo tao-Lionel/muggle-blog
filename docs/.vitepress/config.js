@@ -14,6 +14,12 @@ export default defineConfig({
     lang: "zh-CN",
     description: "web前端技术博客,专注前端学习与总结。包括但不限于分享JavaScript,js,ES6,TypeScript,vue,ts,css3,css,html5,html,Node,git等技术文章。",
     lastUpdated: true,
+    head: [
+        [
+          'script',
+          { src: 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', type:'' }
+        ],
+    ],
     themeConfig: {
         nav: [
             {

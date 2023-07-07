@@ -9,7 +9,7 @@ hero:
   text: 活到老 学到老.
   tagline: 杂七杂八、乱七八糟的文章
   image:
-    src: /img/bg.png
+    src: /
     alt: VitePress
   actions:
     - theme: brand
@@ -32,6 +32,13 @@ features:
     details: 一些小demo
     link:  /collect/index
 ---
+
+<template>
+
+</template>
+
+<script setup  lang="ts">
+</script>
 
 <style lang="scss">
 :root{
