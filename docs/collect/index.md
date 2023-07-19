@@ -25,7 +25,8 @@ title:收藏
 * [Ts入门教程](http://ts.xcatliu.com/)
 * [蚂蚁数据可视化](https://antv.vision/zh)
 * [速查表](https://wangchujiang.com/reference/)
-
+* [酱酱们的每日掘金的文章合集](https://tea-blog.github.io/auto-sync-blog/sort/all.html)
+  
 ## Github
 
 * [shields](https://shields.io/) 徽章图标
