@@ -5,7 +5,7 @@ set -e
 
 # npm run build 
 # cd docs/.vuepress/dist
-npm run docs:build
+yarn run docs:build
 cd docs/.vitepress/dist
 
 
