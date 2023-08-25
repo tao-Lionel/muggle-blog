@@ -3,48 +3,53 @@ title:收藏
 ---
 # 个人收藏夹
 
-## 推荐
+## 收藏夹
 
 * [panjiachen](https://panjiachen.github.io/awesome-bookmarks/) by 花裤衩
-* [编程导航](https://www.code-nav.cn/) by 程序员鱼皮
 * [编程自学之路](https://r2coding.com/) by 程序羊
-
-<!-- more -->
+* [优秀工具箱集合](https://awesome-toolbox-chinese.bestxtools.com/)
+* [好工具周刊](https://bestxtools.zhubai.love/)
 
 ## 文档
 
-* [MDN](https://developer.mozilla.org/zh-CN/docs/Web) | [MDN-JS标准内置对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects) Web技术权威文档
 * [DevDocs](https://devdocs.io/) Web 开发技术文档，非常不错的学习手册！
 * [现代JavaScript教程](https://zh.javascript.info) 以最新标准为基准的JS教程
-* [ES6教程](http://es6.ruanyifeng.com/) 阮一峰的ES6教程
 * [Bash脚本教程](https://wangdoc.com/bash/) 阮一峰编写
 * [Fetch API教程](https://www.ruanyifeng.com/blog/2020/12/fetch-tutorial.html) 阮一峰编写
 * [常用Git命令清单](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html) 阮一峰编写
-* [Chrome插件官方档](https://developer.chrome.com/docs/extensions/reference/)
-* [Chrome控制台手册](https://leeon.gitbooks.io/devtools/content/learn_basic/tips_and_tricks_part_console.html)
-* [Ts入门教程](http://ts.xcatliu.com/)
-* [蚂蚁数据可视化](https://antv.vision/zh)
+* [TS入门教程](http://ts.xcatliu.com/)
 * [速查表](https://wangchujiang.com/reference/)
 * [酱酱们的每日掘金的文章合集](https://tea-blog.github.io/auto-sync-blog/sort/all.html)
-  
+* [30 seconds of code](https://30secondsofcode.org/) 收集了许多有用的代码小片段
+* [fs 文件系统 | Node.js API 文档](http://nodejs.cn/api/fs.html)
+* [Puppeteer 简介 | Puppeteer 中文文档 | Puppeteer 中文网](https://puppeteer.bootcss.com/)
+* [面试官：说说地址栏输入 URL 敲下回车后发生了什么? | web前端面试 - 面试官系列](https://vue3js.cn/interview/http/after_url.html)
+* [Chrome控制台手册](https://leeon.gitbooks.io/devtools/content/learn_basic/tips_and_tricks_part_console.html)
+
+## 浏览器插件
+
+* [Chrome插件官方档](https://developer.chrome.com/docs/extensions/reference/)
+
 ## Github
 
 * [shields](https://shields.io/) 徽章图标
 * [正则教程](https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md)
 * [各种阮一峰教程](https://github.com/wangdoc)
-
+* [美团技术团队](https://tech.meituan.com/)
+  
 ## 博客
 
 * [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 * [Chrome Dev Tools](https://umaar.com/dev-tips/) Chrome Dev Tools 非常强大，dev-tips 列出了 100 多条它可以做的事
-
+* [张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/)
+  
 ## 前端小工具
 
-* [30 seconds of code](https://30secondsofcode.org/) 收集了许多有用的代码小片段
 * [生成vscode代码片段](https://snippet-generator.app/) 生成vscode代码片段
 * [油猴插件](https://greasyfork.org/zh-CN) 各种油猴插件网站
 * [websocket](http://www.websocket-test.com/) websocket 在线测试
-
+* [JS在线编辑器](https://jsrun.net/new?mode=black)
+  
 ## CSS
 
 * [You-need-to-know-css](https://lhammer.cn/You-need-to-know-css/#/zh-cn/) CSS的各种DEMO，很全
@@ -54,51 +59,17 @@ title:收藏
 * [animista](https://animista.net/) CSS动画可视化工具，复制代码就能用
 * [navnav](http://navnav.co/) 各种炫酷的CSS动画组件
 
-## 图片工具
-
-* [tinypng图片压缩](https://tinypng.com) 压缩png很有用
-
-## CDN加速
-
-* [jsDelivr](http://www.jsdelivr.com/) 国外的一家优秀的公共 CDN 服务提供商
-* [unpkg](https://unpkg.com/) cdn 服务
-
-## 网站托管
-
-* [vercel](https://vercel.com/) 好用的网站托管服务
-
-## 设计
-
-* [iconfont](https://www.iconfont.cn/) 阿里巴巴矢量图标库
-* [404页](https://error404.fun/) 404页素材
-
-## 社区
-
-* [V2EX](https://www.v2ex.com/) 创意工作者们的社区
-* [鱼塘热榜](https://mo.fish) 划水网站，收集了很多网站，当天热门文章
-
 ## 有趣
 
-* [电脑恶搞](https://pranx.com/) 收集了一些恶搞小网页，比如xp系统蓝屏、黑客界面等
 * [neocities](https://neocities.org/browse) 上面托管了很多有趣的网站
 * [奇趣网站收藏家](https://fuun.fun/) 收藏了很多有趣的网站
 * [awesome-comment](https://github.com/Blankj/awesome-comment) 里面收集了很多有趣的代码注释
-* [text-img](https://www.text-image.com/index.html) 都将图片转化为 ascii 用来写注释
-* [ascii video](https://pessimistress.github.io/ascii/) 使用ascii编码生成视频动画
-* [weird-fonts](https://github.com/beizhedenglong/weird-fonts) 将普通字母转化为 特殊 unicode
-* [snake](https://github.com/epidemian/snake) 在地址栏里面玩贪吃蛇
 * [zero-width-lib](https://github.com/yuanfux/zero-width-lib) 利用零宽度字符实现 隐形水印、加密信息分享、逃脱词匹配，很有创意
-* [abbreviations](https://www.abbreviations.com/) 查看一个简写是什么意思的网站
-* [magi](https://magi.com/) ai 搜索神器，超屌
-* [在线取名](https://www.qmsjmfb.com/) 解决取名难问题，超多名字生成
-* [像素画GIF](https://collet66.web.fc2.com/nijisanji/index.html)
-* [猫咪生成器](https://uchinoko-maker.jp/)
-* [taiko-web](https://github.com/bui/taiko-web) 太鼓达人网页版 只能说很 6
+* [Craiyon](https://www.craiyon.com/) 图片生成
 
-## 生成器
+## 其他
 
-* [卡通头像生成器](https://toonme.com/) 上传真人头像生成卡通头像
-* [artbreeder](https://www.artbreeder.com/) 动漫图生成真人图像
-* [声音生成器](https://neal.fun/ambient-chaos/) 生成下雨、咖啡厅、海浪、火车等声音，可几种声音合成
-* [诺基亚短信图片生成器](https://zzkia.noddl.me:8020/)
-* [到账语音生成器](https://zfb.xugaoyi.com/) 支付宝到账1亿元
+* [SMS-Activate是在线接受短信的虚拟号码服务](https://sms-activate.org/)
+* [AST explorer](https://astexplorer.net/)
+* [首页 | 佩奇GPT商店](https://peiqi.shop/)
+* [一元机场](https://xn--4gq62f52gdss.com/)
